@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Nintendo</title>
+  </head>
+  <body>
+    <!-- /* ==============nav================*/ -->
+
+    <nav class="nav">
+      <!-- /* __________________upperNav____________ */ -->
+
+      <div class="nav-up">
+        <img
+          src="./images/Nintendo_Logo_2017.png"
+          class="nav-up__logo"
+          alt="logo"
+        />
+        <form class="nav-up__form">
+          <div class="form-search-nav">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              class="form-search-nav__search"
+              placeholder="Search games, hardware, news, etc"
+            />
+          </div>
+          <div class="select-box">
+            <div class="select-box__items">
+              <div class="selected">All categories</div>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="options-container">
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="All-categories"
+                  name="category"
+                />
+                <label for="All-categories"> All categories</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="games"
+                  name="category"
+                />
+                <label for="games">Games</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="hardware"
+                  name="category"
+                />
+                <label for="hardware">Hardware</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="merchandise"
+                  name="category"
+                />
+                <label for="merchandise">Merchandise</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="newandevents"
+                  name="category"
+                />
+                <label for="newandevents">News & Events</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="support"
+                  name="category"
+                />
+                <label for="support">Support</label>
+              </div>
+            </div>
+            <div class="active-bg"></div>
+          </div>
+        </form>
+        <div class="nav-up__right">
+          <ul class="nav-up__right-ul">
+            <li class="nav-up__right-li">
+              <a href="#" class="nav-up__right-a"
+                ><i class="fa-solid fa-circle-question"></i>Support</a
+              >
+            </li>
+            <li class="nav-up__right-li">
+              <a href="#" class="nav-up__right-a">
+                <i class="fa-solid fa-heart"></i>Wish List</a
+              >
+            </li>
+            <li class="nav-up__right-li">
+              <a href="#" class="nav-up__right-a">
+                <i class="fa-solid fa-cart-shopping"></i>Cart</a
+              >
+            </li>
+            <li class="nav-up__right-li open-sidebar">
+              <a class="nav-up__right-a">
+                <i class="fa-solid fa-right-to-bracket "></i>Log
+                in/Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /* -----nav-search__absolute------- */ -->
+      <div class="nav-search__absolute">
+        <div class="nav-search-close">
+          <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="nav-search__container">
+          <div class="nav-search--topics">
+            <h1 class="nav-search--topics__h1">Trending topics :</h1>
+            <h1 class="nav-search--topics__h1">Animal Crossing</h1>
+            <h1 class="nav-search--topics__h1">Nintendo Switch</h1>
+            <h1 class="nav-search--topics__h1">
+              Nintendo Switch games
+            </h1>
+            <h1 class="nav-search--topics__h1">Zelda games</h1>
+            <h1 class="nav-search--topics__h1">Pokémon games</h1>
+          </div>
+          <div class="nav-search--products">
+            <h1 class="nav-search--products__h1">
+              Top store products
+            </h1>
+            <div class="nav-search--products__grid">
+              <div class="products--grid__item">
+                <img
+                  src="./images/itemgame1.avif"
+                  alt=""
+                  class="grid--item__img"
+                />
+                <div class="grid--item__content">
+                  <div class="item--content__title">
+                    Kirby™ and the Forgotten Land
+                  </div>
+                  <div class="item--content__console">
+                    <p class="content--console__name">
+                      Nintendo Switch
+                    </p>
+                    <i class="fa-regular fa-heart fa-heart__open"></i>
+                    <i class="fa-solid fa-heart fa-heart__close"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="products--grid__item">
+                <img
+                  src="./images/itemgame2.avif"
+                  alt=""
+                  class="grid--item__img"
+                />
+                <div class="grid--item__content">
+                  <div class="item--content__title">
+                    Metroid™ Dread Global Defensive
+                  </div>
+                  <div class="item--content__console">
+                    <p class="content--console__name">
+                      Nintendo Switch
+                    </p>
+                    <i class="fa-regular fa-heart fa-heart__open"></i>
+                    <i class="fa-solid fa-heart fa-heart__close"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="products--grid__item">
+                <img
+                  src="./images/itemgame3.avif"
+                  alt=""
+                  class="grid--item__img"
+                />
+                <div class="grid--item__content">
+                  <div class="item--content__title">
+                    Pokémon™ Legends: Arceus World
+                  </div>
+                  <div class="item--content__console">
+                    <p class="content--console__name">
+                      Nintendo Switch
+                    </p>
+                    <i class="fa-regular fa-heart fa-heart__open"></i>
+                    <i class="fa-solid fa-heart fa-heart__close"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="products--grid__item">
+                <img
+                  src="./images/itemgame4.avif"
+                  alt=""
+                  class="grid--item__img"
+                />
+                <div class="grid--item__content">
+                  <div class="item--content__title">
+                    Nintendo Switch™ Sports Live
+                  </div>
+                  <div class="item--content__console">
+                    <p class="content--console__name">
+                      Nintendo Switch
+                    </p>
+                    <i class="fa-regular fa-heart fa-heart__open"></i>
+                    <i class="fa-solid fa-heart fa-heart__close"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search__bg"></div>
+      <!-- /* -------------nav-down------------ */ -->
+      <div class="nav-down">
+        <ul class="container nav-down--content">
+          <li
+            class="nav-down--content__item nav-down--content__item1"
+          >
+            <i class="fa-solid fa-image"></i>
+            <h1 class="nav-down--h1">My Nintendo Store</h1>
+            <i class="fa-solid fa-chevron-up"></i>
+            <div class="nav-down--absolute  nav-down--absolute__one">
+              <div class="nav-down--absolute__content container">
+                <div class="nav-down--absolute__tandc">
+                  <div class="nav-down--absolute__title">
+                    <i class="fa-brands fa-space-awesome"></i>
+                    <h1>My Nintendo Store</h1>
+                  </div>
+                  <div
+                    class="nav-down--absolute__close nav-down--absolute__close1"
+                  >
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+                <div class="nav-down--absolute__main-content">
+                  <ul class="nav-down--absolute_ul">
+                    <li class="nav-down--absolute__li">
+                      <i class="fa-brands fa-unsplash"></i>Hardware
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Nintendo Switch systems
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Joy-Con & controllers
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Cases & more
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Replacement parts
+                    </li>
+                  </ul>
+                  <ul class="nav-down--absolute_ul">
+                    <li class="nav-down--absolute__li">
+                      <i class="fa-solid fa-house"></i></i
+                      >Merchandise
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Apparel & accessories
+                    </li>
+                    <li class="nav-down--absolute__li">
+                     Home & office
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Plush
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Toys
+                    </li>
+                  </ul>
+                   <ul class="nav-down--absolute_ul">
+                    <li class="nav-down--absolute__li">
+                      <i class="fa-solid fa-star"></i>Store exclusives
+                    </li>
+                    <li class="nav-down--absolute__li">
+                     Exclusive products
+                    </li>
+                    <li class="nav-down--absolute__li">
+                     My Nintendo rewards
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Nintendo Switch Online offers
+                    </li>
+                  </ul>
+                   <ul class="nav-down--absolute_ul">
+                    <li class="nav-down--absolute__li">
+                      <i class="fa-solid fa-person-running"></i>Characters
+                    </li>
+                    <li class="nav-down--absolute__li">
+                     Animal Crossing
+                    </li>
+                    <li class="nav-down--absolute__li">
+                     Splatoon
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      Mario
+                    </li>
+                    <li class="nav-down--absolute__li">
+                      The Legend of Zelda
+                    </li>
+                  </ul>
+                   <ul class="nav-down--absolute_ul">
+                    <li class="nav-down--absolute__li">
+                     <i class="fa-solid fa-ticket"></i></i>Sales & deals
+                    </li>
+                   
+                  </ul>
+                </div>
+        
+                <div class="nav-down--absolute__link">
+                  <a href="#">Shop all</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="nav-down--content__item
+          nav-down--content__item2">
+            <i class="fa-solid fa-gamepad"></i>
+            <h1 class="nav-down--h1">Games</h1>
+            <i class="fa-solid fa-chevron-up"></i>
+             <div class="nav-down--absolute nav-down--absolute__two">
+              <div class="nav-down--absolute__content container">
+               
+                <div class="nav-down--absolute__main-content nav-down--secondary-content">
+                  <ul class="nav-down--absolute_ul nav-down--secondary-content__ul">
+                    <li class="nav-down--secondary-content__li">
+                    
+                      <i class="fa-solid fa-volleyball"></i>
+                      <p class="absolute-li--item__heading">Nintendo  games</p>
+                    
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                   
+                      <i class="fa-solid fa-hand"></i>
+                      <p class="absolute-li--item__heading">New releases</p>
+                  
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                    
+                     <i class="fa-solid fa-calendar"></i>
+                      <p class="absolute-li--item__heading">Coming soon</p>
+                    
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                    
+                      <i class="fa-solid fa-shop"></i>
+                      <p class="absolute-li--item__heading">Shop games</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-down--content__item nav-down--content__item3">
+            <i class="fa-brands fa-ussunnah"></i>
+            <h1 class="nav-down--h1">Nintendo Switch</h1>
+            <i class="fa-solid fa-chevron-up"></i>
+               <div class="nav-down--absolute nav-down--absolute__three">
+              <div class="nav-down--absolute__content container">
+                <div class="nav-down--absolute__main-content nav-down--secondary-content">
+                  <ul class="nav-down--absolute_ul nav-down--secondary-content__ul">
+                    <li class="nav-down--secondary-content__li nav-down--secondary-content__li-long">
+                    
+                      <img src="./images/navabsolute1.avif" alt="">
+                      <p class="absolute-li--item__heading">Nintendo Switch lineup</p>
+                    
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                   
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                      <p class="absolute-li--item__heading">Compery system</p>
+                  
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                    
+                     <img src="./images/pngegg.png" alt="">
+                      <p class="absolute-li--item__heading">Online service</p>
+                    
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                    
+                     <img src="./images/pngegg(1).png" alt="">
+                      <p class="absolute-li--item__heading">Accessories</p>
+                    
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                    
+                     <img src="./images/pngegg(2).png" alt="">
+                      <p class="absolute-li--item__heading">Shop systems</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-down--content__item ">
+            <i class="fa-brands fa-weixin"></i>
+            <h1 class="nav-down--h1">News & Events</h1>
+          </li>
+          <li class="nav-down--content__item nav-down--content__item5">
+            <i class="fa-solid fa-star"></i>
+            <h1 class="nav-down--h1">Play Nintendo</h1>
+            <i class="fa-solid fa-chevron-up"></i>
+                <div class="nav-down--absolute nav-down--absolute__five">
+              <div class="nav-down--absolute__content container">
+                <div class="nav-down--absolute__main-content nav-down--secondary-content">
+                  <ul class="nav-down--absolute_ul nav-down--secondary-content__ul">
+                    
+                    <li class="nav-down--secondary-content__li">
+                   
+                    <i class="fa-solid fa-children"></i>
+                      <p class="absolute-li--item__heading">For child</p>
+                  
+                    </li>
+                    <li class="nav-down--secondary-content__li">
+                   
+                    <i class="fa-solid fa-hippo"></i>
+                      <p class="absolute-li--item__heading">For parents</p>
+                  
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ----------------sidebar-nav-------------- -->
+    <div class="nav--sidebar">
+      <div class="sidebar--up">
+        <h4>Lon in / Sing Up</h4>
+        <i class="fa-sharp fa-solid fa-circle-xmark sidebar--up__closeUp close-sidebar"></i>
+      </div>
+      <div class="sidebar--smilings">
+        <img src="./images/smiling.avif" alt="">
+        <div class="sidebar--smillings__content">
+          <h3>With a free account, you can</h3>
+          <ul class="sidebar--smilings__ul">
+          <li class="sidebar--smilings__li">Shop online</li>
+          <li class="sidebar--smilings__li">Earn My Nintendo points</li>
+          <li class="sidebar--smilings__li">Save a Wish List</li>
+        </ul>
+        </div>
+        
+      </div>
+      <div class="sidebar--links">
+        <a href="#" class="sidebar--links__1">Log in</a>
+        <a href="#" class="sidebar--links__2">Sign up</a>
+      </div>
+      <div class="sidebar-down">
+        <ul class="sidebar-down__ul">
+          <li class="sidebar-down__li">
+           <i class="fa-solid fa-cart-shopping"></i> <p>Order status</p>
+          </li>
+          <li class="sidebar-down__li">
+           <i class="fa-solid fa-filter"></i> <p>My Nintendo</p>
+           <i class="fa-solid fa-paperclip"></i>
+          </li>
+          <li class="sidebar-down__li">
+          <i class="fa-solid fa-shield-halved"></i> <p>Redeem code</p>
+           <i class="fa-solid fa-paperclip"></i>
+          </li>
+          <li class="sidebar-down__li">
+           <i class="fa-solid fa-car"></i> <p>Account settling</p>
+           <i class="fa-solid fa-paperclip"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-bar--bg__dark"></div>
+
+    <!-- /* -----nav 1010------- */ -->
+    <div class="nav-1010">
+      <img src="./images/Nintendo_Logo_2017.png" class="nav-1010__logo" alt="">
+    </div>
+
+    <!-- /* -----Free shopping------- */ -->
+    <div class="free-shopping ">
+      <div class="container free-shopping__content">
+        <ul class="free-shopping__ul">
+         <li class="free-shopping__li"><i class="fa-solid fa-truck-fast"></i> <span>Free shipping</span> on orders $50 or more. <a href="#"> Restrictions apply.</a> </li>
+         <li class="free-shopping__li"><i class="fa-solid fa-grip-lines-vertical"></i></li>
+         
+         <li class="free-shopping__li"><i class="fa-solid fa-wand-magic-sparkles"></i> Earn <span> My Nintendo Points</span> on digital games </li>
+        </ul>
+      </div>
+    </div>
+
+     <!-- /* -----Free shopping 1010------- */ -->
+     <div class="free-shopping__1010 ">
+      <div class="container free-shopping__content">
+        <ul class="free-shopping__ul">        
+         <li class="free-shopping__li-1010"><i class="fa-solid fa-wand-magic-sparkles"></i> Earn <span> My Nintendo Points</span> on digital games </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- /* ----- navBar bottom------- */ -->
+    
+    <div class="lower-navBar">
+      <div class="nav-bar-bottom">
+       
+        <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-bars lower-navBar__main-content--item  lower-navBar-open-open-close"></i>
+        </div>
+        <!-- <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-bars lower-navBar__main-content--item  lower-navBar-open-open-close"></i>
+        </div> -->
+       
+        <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-mug-hot lower-navBar__main-content--item"></i> </div>
+        <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-magnifying-glass-dollar lower-navBar__main-content--item
+        lower-navBar--box-search form-search-nav--down"></i> </div>
+        <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-cart-shopping lower-navBar__main-content--item"></i></div>
+        <div class="lower-navBar__main-content--box">
+        <i class="fa-solid fa-user lower-navBar__main-content--item open-sidebar"></i></div>
+        
+      </div>
+
+  
+      
+      
+      <div class="lower-navBar__main-menu lower-navBar__main-menu--starter ">
+       
+        <div class="lower-navBar__main-menu--herader">
+          <h3 class="lower-navBar__main-menu--herader-h3">Menu</h3>
+         <i class="fa-solid fa-lock lower-navBar__main-menu--herader-close"></i>
+        </div>
+        <ul class="lower-navBar__main-menu--ul">
+          <li class="lower-navBar__main-menu--li lower-navBar__main-menu--li--go--store"><i class="fa-brands fa-slack"></i> <p class="lower-navBar__main-menu--li--p">My Nintendo Store</p><i class="fa-solid fa-arrow-right lower-navBar__main-menu--right--i"></i> </li>
+          <li class="lower-navBar__main-menu--li lower-navBar__main-menu--li--go--games"><i class="fa-solid fa-bomb"></i><p class="lower-navBar__main-menu--li--p">Games</p><i class="fa-solid fa-arrow-right lower-navBar__main-menu--right--i"></i></li>
+          <li class="lower-navBar__main-menu--li lower-navBar__main-menu--li--go--switch"><i class="fa-solid fa-camera-retro"></i>
+          <p class="lower-navBar__main-menu--li--p">Nintendo Switch</p><i class="fa-solid fa-arrow-right lower-navBar__main-menu--right--i"></i></li>
+          <li class="lower-navBar__main-menu--li"><i class="fa-solid fa-pen"></i><p class="lower-navBar__main-menu--li--p">News & Events</p></li>
+          <li class="lower-navBar__main-menu--li lower-navBar__main-menu--li--go--play-nintendo"><i class="fa-solid fa-ghost"></i><p class="lower-navBar__main-menu--li--p">Play Nintendo</p><i class="fa-solid fa-arrow-right lower-navBar__main-menu--right--i"></i></li>
+          <li class="lower-navBar__main-menu--li"><i class="fa-solid fa-bolt"></i><p class="lower-navBar__main-menu--li--p">Support</p></li>
+          <li class="lower-navBar__main-menu--li"><i class="fa-solid fa-gift"></i><p class="lower-navBar__main-menu--li--p">Change Status</p></li>
+        </ul>
+        </div>
+<!-- -------------- -->
+        <div class="lower-navBar__main-menu--play-nintendo lower-navBar__main-menu">
+        <div class="lower-navBar__main-menu--herader">
+          <i class="fa-sharp fa-solid fa-chevron-left lower-navBar__main-menu--herader-go-back"></i>
+          <h3 class="lower-navBar__main-menu--herader-h3">Play Nintendo</h3>
+         <i class="fa-solid fa-lock lower-navBar__main-menu--herader-close"></i>
+        </div>
+        <ul class="lower-navBar__main-menu--ul">
+          <li class="lower-navBar__main-menu--li"> <p class="lower-navBar__main-menu--li--p">For kids</p> </li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">For parents</p></li>
+        </ul>
+      </div>
+
+       <div class="lower-navBar__main-menu--switch lower-navBar__main-menu">
+        <div class="lower-navBar__main-menu--herader">
+          <i class="fa-sharp fa-solid fa-chevron-left lower-navBar__main-menu--herader-go-back"></i>
+          <h3 class="lower-navBar__main-menu--herader-h3">Nintendo Switch</h3>
+         <i class="fa-solid fa-lock lower-navBar__main-menu--herader-close"></i>
+        </div>
+        <ul class="lower-navBar__main-menu--ul">
+          <li class="lower-navBar__main-menu--li"> <p class="lower-navBar__main-menu--li--p">Nintendo Switch lineup</p> </li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Compare systems</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Online service</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Accessories</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Shop systems</p></li>
+        </ul>
+      </div>
+
+          <div class="lower-navBar__main-menu--game lower-navBar__main-menu">
+        <div class="lower-navBar__main-menu--herader">
+          <i class="fa-sharp fa-solid fa-chevron-left lower-navBar__main-menu--herader-go-back"></i>
+          <h3 class="lower-navBar__main-menu--herader-h3">Games</h3>
+         <i class="fa-solid fa-lock lower-navBar__main-menu--herader-close"></i>
+        </div>
+        <ul class="lower-navBar__main-menu--ul">
+          
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Nintendo Switch games</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">New releases</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Coming soon</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Shop games</p></li>
+        </ul>
+      </div>
+
+      <div class="lower-navBar__main-menu--store lower-navBar__main-menu">
+        <div class="lower-navBar__main-menu--herader">
+          <i class="fa-sharp fa-solid fa-chevron-left lower-navBar__main-menu--herader-go-back"></i>
+          <h3 class="lower-navBar__main-menu--herader-h3">My Nintendo Store</h3>
+         <i class="fa-solid fa-lock lower-navBar__main-menu--herader-close"></i>
+        </div>
+        <ul class="lower-navBar__main-menu--ul">
+          
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Shop</p></li>
+          <li class="lower-navBar__main-menu--li"><p class="lower-navBar__main-menu--li--p">Sale & deals</p></li>
+        </ul>
+      </div>
+
+      </div>
+      <div class="lower-navBar__main-menu--dark"></div>
+    </div>
+
+    <!-- /* -----section1------- */ -->
+    <section class="section1">
+      <div class="section1--container">
+        <div class="container content1">
+          <div class="content1--up">
+            <p class="content1--up__text">Store</p>
+           <i class="fa-solid fa-circle-chevron-right"></i>
+           <p class="content1--up__text">Store</p>
+           <i class="fa-solid fa-circle-chevron-right"></i>
+            <p class="content1--up__text">Kirby’s Return to Dream Land™ Deluxe</p>
+          </div>
+           <div class="content1--middle">
+            <div id="room-gallery" class="room-gallery">
+          <i class="fa-solid fa-square-caret-left room-gallery__left btn-absolute-left btn-absolute"></i>
+        <img class="gallery-hightlight" src="./images/content1--middle__img1.jpeg" alt="room1" />
+        <i class="fa-solid fa-square-caret-right room-gallery__right btn-absolute-right btn-absolute"></i>
+        <div class="room-preview">
+          <i class="fa-solid fa-square-caret-left room-gallery__left"></i>
+          <img src="./images/content1--middle__img1.jpeg" class="room-active content1--middle__images-item section1-img1" alt="" />
+         
+          <img src="./images/content1--middle__img2.jpeg" class="content1--middle__images-item section1-img2" alt="" />
+          <img src="./images/content1--middle__img3.jpeg" class="content1--middle__images-item section1-img3" alt="" />
+          <img src="./images/content1--middle__img4.avif" class="content1--middle__images-item section1-img4" alt="" />
+          <img src="./images/content1--middle__img5.avif" class="content1--middle__images-item section1-img5" alt="" />
+          <img src="./images/content1--middle__img6.avif" class="content1--middle__images-item section1-img6" alt="" />
+          <img src="./images/content1--middle__img7.avif" class="content1--middle__images-item section1-img7" alt="" />
+          <i class="fa-solid fa-square-caret-right room-gallery__right"></i>
+        </div>
+            
+        </div>
+        <div class="content1--middle__description">
+          <h5 class="middle--description__h3">
+            Nintendo Switch
+          </h5>
+          <h1 class="middle--description__h1">Kirby’s Return to Dream Land™ Deluxe</h1>
+          <div class="middle--description__price">
+            <p>$59.99</p>
+           <i class="fa-regular fa-face-kiss description__priceOn kiss-open"></i>
+           <i class="fa-solid fa-face-kiss description__priceOff kiss-close"></i>
+          </div>
+          <p class="middle--description__coin"><img src="./images/gold-coin.avif" alt="">Eligible for up to 300 Gold Points</p>
+          <div class="middle--description__link">
+          <a href="#" class="middle--description__links"><i class="fa-solid fa-sort"></i>Pre-order</a>
+          </div>
+          <p class="middle--description__smltxt">This lets you pre-load the game, so you’ll be able to play as soon as the game is released.</p>
+          <a href="#" class="middle--description__down"><i class="fa-solid fa-house"></i>Find retailers</a>
+        </div>
+
+           </div>
+           <!-- <div class="conteiner1--down">
+            <img src="./images/ESRB.png" alt="">
+           </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- /* -----section2------- */ -->
+    <section class="section2">
+        <div class="container content2">
+          <div class="section2--main-text">
+            <h4>Take a break from the adventure and play subgames with friends</h4>
+            <p>The tough puff Kirby is back for a 4-player* platforming adventure. Copy enemies’ abilities and use their power to attack with a sword, wield a whip, and float with a parasol. You can also laser blast with the new Mecha Copy Ability that makes a series debut! The extra muscle will be handy in finding missing pieces for Magolor’s ship, which crash landed on Planet Popstar. Float and fight along with friends on the same system, where each player can control another Kirby or one of Kirby’s iconic  Family friends like King Dedede, Meta Knight, and Bandana Waddle Dee<span class="section2--dots">...</span><span class="section2--see-more">Play attractions built around returning subgames like Samurai Kirby as well as some brand-new ones like Magolor’s Tome Trackers. Bring along up to 3 additional friends on a detour from the adventure as you compete on the same system* and share the fun together!</span></p>
+        <div class="section2--read-more-less">
+        <i class="fa-solid fa-plus plus-read-more"></i><i class="fa-solid fa-minus minus-read-more"></i><a  class="section2-read-more__btn">Read more</a>
+       </div>
+      </div>
+   <img src="./images/forReadMore.avif"  alt="section2-img">
+  </div> 
+</section>
+
+<!-- /* -----section3------- */ -->
+<section class="section3">
+  <div class="container content3">
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden"><i class="fa-solid fa-delete-left"></i> </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <img class='carousel__image' src="./images/section3-img1.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img2.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img3.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img4.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img5.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img6.avif" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class='carousel__image' src="./images/section3-img7.avif" alt="">
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right"><i class="fa-solid fa-delete-left"></i></button>
+
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /* -----section4------- */ -->
+<section class="section4">
+  <div class="container content4">
+    <div class="content4__left-up content4__container">
+      <h1 class="content4__left-up--h1">ESRB rating</h1>
+      <div class="content4__main-content--all  content4__left-up--rp">
+        <img src="./images/ESRB.png" alt="" class="content4__rp">
+        <p class="content4__rp--p">Visit www.espb.org for reting information</p>
+      </div>
+      </div>
+      <div class="content4__right-down content4__container">
+        <h1 class="content4__right-down--h1">Supported play modes</h1>
+        <div class=" content4__main-content--all content4__right-down--main-content">
+        <div class="content4__tv content4__right-down--img">
+          <img src="./images/section3nt3.jpg" 
+          alt="">
+          <p>TV</p>
+        </div>
+        <div class="content4__tt content4__right-down--img">
+          <img src="./images/section3nt3.jpg" 
+          alt="">
+          <p>Tabletop</p>
+        </div>
+        <div class="content4__nt content4__right-down--img">
+          <img src="./images/section3nt3.jpg" 
+          alt="">
+          <p>Handheld</p>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- /* -----section5------- */ -->
+<section class="section5">
+  <div class="container content5">
+    <div class="section5__row">
+      <div class="section5__row--header">
+        <h3 class="row__header--title">More Nintendo games:</h3>
+        <div class="section5__progress-bar">
+          <!-- <div class="section5__progress-bar--items section5__active "></div>
+          <div class="section5__progress-bar--items "></div>
+          <div class="section5__progress-bar--items "></div>
+           -->
+        </div>
+      </div>
+    <div class="section5__container">
+      <button class="section5__handle section5__handle-left"><div class="section5__handle--text"> &#8249;</div></button>
+      <div class="section5__slider">
+        <img src="./images/section5-1.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-2.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-3.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-4.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-5.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-6.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-7.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-8.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-9.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-10.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-11.avif" alt="" class="section5__imgs">
+        <img src="./images/section5-12.avif" alt="" class="section5__imgs">
+      </div>
+       <button class="section5__handle section5__handle-right"><div class="section5__handle--text">&#8250;</div></button>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- /* -----section6------- */ -->
+<section class="section6">
+  <div class="container content6">
+    <div class="content6__box">
+    <div class="content6__item">
+      <div class="content6__item--self">
+      <i class="fa-solid fa-calendar-days"></i><h2 class="content6__item--h2">Release date</h2></div> <p  class="content6__item--p">February 24, 2023</p>
+    </div>
+    <div class="content6__item">
+      <div class="content6__item--self">
+      <i class="fa-sharp fa-solid fa-people-arrows"></i><h2 class="content6__item--h2">No. of players</h2></div> <a href="#" class="content6__item--a">Single System (1-4)</a>
+    </div>
+    <div class="content6__item">
+      <div class="content6__item--self">
+     <i class="fa-sharp fa-solid fa-gamepad"></i><h2 class="content6__item--h2">Genre</h2></div> <a href="#" class="content6__item--a">Platformer</a>
+    </div>
+    <div class="content6__item">
+      <div class="content6__item--self">
+      <i class="fa-solid fa-house"></i><h2 class="content6__item--h2">Publisher</h2 > </div><a href="#" class="content6__item--a">Action</a>
+    </div>
+    <div class="content6__item"> <div class="content6__item--self">
+      <i class="fa-solid fa-hammer"></i><h2 class="content6__item--h2">ESRB rating</h2></div> <a href="#" class="content6__item--a">Rating Pending</a>
+    </div>
+    <div class="content6__item"> <div class="content6__item--self">
+      <i class="fa-solid fa-terminal"></i><h2 class="content6__item--h2">Supported play modes</h2 ></div> <p class="content6__item--p">Handheld mode, Tabletop mode, TV mode</p>
+    </div>
+    <div class="content6__item"><div class="content6__item--self">
+      <i class="fa-solid fa-database"></i><h2 class="content6__item--h2">Game file size</h2 ></div> <p class="content6__item--p">6 GB</p>
+    </div>
+    <div class="content6__item">
+      <div class="content6__item--self">
+      <i class="fa-solid fa-globe"></i><h2 class="content6__item--h2">Supported languages</h2> </div><p class="content6__item--p">Dutch, English, French, German, Italian, Japanese, Korean, Portuguese, Simplified Chinese, Spanish, Traditional Chinese</p>
+    </div>
+   </div>
+  </div>
+</section>
+
+<!-- /* -----section7------- */ -->
+<section class="section7">
+  <div class="container content7">
+    <div class="content7__box">
+    <div class="content7__info">
+      <img src="./images/nintendo-7797.png" class="content7__info--logo" alt="">
+      <h1 class="content7__info--h1">
+        Play online, access classic NES™ and Super NES™ games, and more with a Nintendo Switch Online membership.
+      </h1>
+      <div class="content7__info--links">
+        <p>This game supports:</p><a href="#" class="content7__info--link">Online Play</a>
+        <a href="#" class="content7__info--link">Save Data Cloud</a>
+      </div>
+      <div class="content7__info--btn-box">
+      <a href="#" class="content7__info--btn">Learn more</a>
+      </div>
+    </div>
+    <div class="content7__img--box">
+    <img src="./images/section7img2.avif" alt="" class="content7__img">
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- /* -----section8------- */ -->
+<section class="section8">
+  <div class="container content8">
+    <div class="content8__box">
+      <p class="content8__autor">Nintendo</p>
+    <h2 class="content8__header">
+Kirby’s Return to Dream Land™ Deluxe Gallery
+    </h2>
+    <div class="content8__gallery-img content8__img1">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img2">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img3">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img4">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img5">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img6">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+    <div class="content8__gallery-img content8__img7">
+      <div class="content8__title">
+        <a href="#">Kirby’s adventure</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- /* -----section9------- */ -->
+<section class="section9">
+  <div class="container content9">
+    <p class="caption8__text">Nintendo Switch Online membership (sold separately) and Nintendo Account required for online play. Not available in all countries. Internet access required for online features. Terms apply. nintendo.com/switch-online</p>
+    <p class="caption8__text">*Additional accessories may be required for multiplayer. Sold separately.</p>
+    <p class="caption8__text">© HAL Laboratory, Inc. / Nintendo. Nintendo trademarks are properties of Nintendo.</p>
+  </div>
+</section>
+
+<!-- /* -----footer------- */ -->
+<!-- /* -----footer up------- */ -->
+<footer class="footer-up">
+  <div class="footer-up__nav">
+    <img src="./images/Nintendo_Logo_2017.png" alt="" 
+    class="footer-up__nav--img">
+    <div class="footer-up__nav--links">
+      <i class="fa-brands fa-facebook footer-up__nav--link"></i>
+      <i class="fa-brands fa-instagram footer-up__nav--link"></i>
+      <i class="fa-brands fa-twitter footer-up__nav--link"></i>
+      <i class="fa-brands fa-youtube footer-up__nav--link"></i>
+    </div>
+  </div>
+  <div class="container content9">
+    <div class="footer-up__main-content">
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">About Nintendo</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Careers</li>
+          <li class="footer-up__main-item__li">Corporate Social Responsibility</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">Shop</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Games</li>
+          <li class="footer-up__main-item__li">Hardware</li>
+          <li class="footer-up__main-item__li">Merchandise</li>
+          <li class="footer-up__main-item__li">Sales & deals</li>
+          <li class="footer-up__main-item__li">Exclusives</li>
+          <li class="footer-up__main-item__li">Online service</li>
+          <li class="footer-up__main-item__li">Nintendo NY store</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">My Nintendo Store orders</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Order details</li>
+          <li class="footer-up__main-item__li">Shipping info</li>
+          <li class="footer-up__main-item__li">Returns & exchanges</li>
+          <li class="footer-up__main-item__li">FAQ</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">Support</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Nintendo Switch</li>
+          <li class="footer-up__main-item__li">Nintendo Account</li>
+          <li class="footer-up__main-item__li">Other systems</li>
+          <li class="footer-up__main-item__li">Repairs</li>
+          <li class="footer-up__main-item__li">Nintendo product recycling</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">Parents</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Info for parents</li>
+          <li class="footer-up__main-item__li">Parental controls</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">Community</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Community guidelines</li>
+          <li class="footer-up__main-item__li">Online safety principles</li>
+        </ul>
+      </div>
+      <div class="footer-up__main-item">
+        <p class="footer-up__main-item__p">Privacy</p>
+        <ul class="footer-up__main-item__ul">
+          <li class="footer-up__main-item__li">Privacy policy</li>
+          <li class="footer-up__main-item__li">Cookies and interest-based ads</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+</footer>
+    <!-- /* -----footer down------- */ -->
+    
+  <div class="footer-down-content">
+    <div class="container ">
+    <div class="footer-down">
+      <p class="footer-down__p">© Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA</p>
+      <div class="footer-down__items">
+        <a class="footer-down__item">Contact us</a>
+        <a class="footer-down__item">Website feedback</a>
+        <a class="footer-down__item">Terms of Use</a>
+        <a class="footer-down__item">Documents & Policies</a>
+      </div>
+      <div class="footer-down__flag">
+        <img src="./images/theNetherlands.png" alt="">
+        <a >Change region</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script type="module" src="script.js"></script>
+    <script src="openImages.js"></script>
+  </body>
+</html>
